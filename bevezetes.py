@@ -5,4 +5,14 @@ def auto_adat():
     print(f"Autó neve: {auto}")
     print(f"Gyártási dátuma: {gyarev}")
 
-    
+    return gyarev
+
+def auto_eredmeny():
+    eredmeny=auto_adat()
+    if (eredmeny<=2000):
+        print("öreg auto")
+    elif(eredmeny==2024):
+        print("friss gyártás")
+    else:
+        print("áltagos korú")
+
